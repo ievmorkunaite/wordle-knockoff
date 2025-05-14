@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wordle knockoff</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="darkmode-switch">
+                <input type="checkbox" id="toggle" class="offscreen">
+                <label for="toggle" class="switch"></label>
+                <p class="toggle-text">Toggle for Darkmode</p>
+            </div>
+            <h1 class="name">(Cheap) Wordle Knockoff</h1>
+        </div>
+        <div class="page-content">
+            <div class="load-indication">
+                <div class="load-spinner">
+                    <img src="loadSpinner.png" alt="loading spinner"></img>
+                </div>
+            </div>
+            <div class="answer-table">
+                <div class="letter-cell" id="letter-1"></div>
+                <div class="letter-cell" id="letter-2"></div>
+                <div class="letter-cell" id="letter-3"></div>
+                <div class="letter-cell" id="letter-4"></div>
+                <div class="letter-cell" id="letter-5"></div>
+                <div class="letter-cell" id="letter-6"></div>
+                <div class="letter-cell" id="letter-7"></div>
+                <div class="letter-cell" id="letter-8"></div>
+                <div class="letter-cell" id="letter-9"></div>
+                <div class="letter-cell" id="letter-10"></div>
+                <div class="letter-cell" id="letter-11"></div>
+                <div class="letter-cell" id="letter-12"></div>
+                <div class="letter-cell" id="letter-13"></div>
+                <div class="letter-cell" id="letter-14"></div>
+                <div class="letter-cell" id="letter-15"></div>
+                <div class="letter-cell" id="letter-16"></div>
+                <div class="letter-cell" id="letter-17"></div>
+                <div class="letter-cell" id="letter-18"></div>
+                <div class="letter-cell" id="letter-19"></div>
+                <div class="letter-cell" id="letter-20"></div>
+                <div class="letter-cell" id="letter-21"></div>
+                <div class="letter-cell" id="letter-22"></div>
+                <div class="letter-cell" id="letter-23"></div>
+                <div class="letter-cell" id="letter-24"></div>
+                <div class="letter-cell" id="letter-25"></div>
+                <div class="letter-cell" id="letter-26"></div>
+                <div class="letter-cell" id="letter-27"></div>
+                <div class="letter-cell" id="letter-28"></div>
+                <div class="letter-cell" id="letter-29"></div>
+                <div class="letter-cell" id="letter-30"></div>
+            </div>
+        </div>
+        <div class="keys">
+            <div class="row">
+                <button id="key-letter-q" class="key">q</button>
+                <button id="key-letter-w" class="key">w</button>
+                <button id="key-letter-e" class="key">e</button>
+                <button id="key-letter-r" class="key">r</button>
+                <button id="key-letter-t" class="key">t</button>
+                <button id="key-letter-y" class="key">y</button>
+                <button id="key-letter-u" class="key">u</button>
+                <button id="key-letter-i" class="key">i</button>
+                <button id="key-letter-o" class="key">o</button>
+                <button id="key-letter-p" class="key">p</button>
+            </div>
+            <div class="row">
+                <button id="key-letter-a" class="key">a</button>
+                <button id="key-letter-s" class="key">s</button>
+                <button id="key-letter-d" class="key">d</button>
+                <button id="key-letter-f" class="key">f</button>
+                <button id="key-letter-g" class="key">g</button>
+                <button id="key-letter-h" class="key">h</button>
+                <button id="key-letter-j" class="key">j</button>
+                <button id="key-letter-k" class="key">k</button>
+                <button id="key-letter-l" class="key">l</button>
+            </div>
+            <div class="row">
+                <button class="key large">ENTER</button>
+                <button id="key-letter-z" class="key">z</button>
+                <button id="key-letter-x" class="key">x</button>
+                <button id="key-letter-c" class="key">c</button>
+                <button id="key-letter-v" class="key">v</button>
+                <button id="key-letter-b" class="key">b</button>
+                <button id="key-letter-n" class="key">n</button>
+                <button id="key-letter-m" class="key">m</button>
+                <button class="key large">DEL</button>
+            </div>
+        </div>
+        <dialog class="winning-dialog">
+            <button class="close-btn">Close</button>
+            <p class="winning-text">you win you silly little winner you</p>
+        </dialog>
+        <script src="./script.js"></script>
+    </body>
+</html>
